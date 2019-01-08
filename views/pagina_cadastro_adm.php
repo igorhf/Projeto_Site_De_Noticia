@@ -13,6 +13,10 @@
     <label>USUARIO:</label><input type="text" name="usuario"><br><br>
     <label>SENHA:</label><input type="password" name="senha">
     <input type="submit" name="btn" value="Salvar">
+    <?php
+    session_start();
+    print_r($_SESSION["campos"]);
+    ?>
     </form>
 </body>
 </html>
