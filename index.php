@@ -8,9 +8,12 @@
 </head>
 <body>
     <?php
-    
-    ?>    
+    $data = date('Y-m-d H:i:s');
 
+    
+    echo("<h1>".$data."</h1>");
+    ?>    
+    
 
 </body>
 </html>

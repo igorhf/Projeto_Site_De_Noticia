@@ -1,5 +1,5 @@
 <?php
-$nameDB = "";
+$nameDB = "bd_noticia";
 $host = "localhost";
 $root = "root";
 $senha = "";
