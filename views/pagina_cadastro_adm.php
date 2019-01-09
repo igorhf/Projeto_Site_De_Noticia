@@ -7,7 +7,7 @@
     <title>Cadastro ADM</title>
 </head>
 <body>
-    <form action="../models/dados_cadastro_adm.php" method="POST">
+    <form action="../models/dados_cadastro_adm.php" method="POST" enctype="multipart/form-data">
     <label>NOME:</label><input type="text" name="nome"><br><br>
     <label>FOTO:</label><input type="file" name="foto"><br><br>
     <label>USUARIO:</label><input type="text" name="usuario"><br><br>
