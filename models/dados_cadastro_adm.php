@@ -31,7 +31,7 @@ if(empty($nome) or empty($foto) or empty($usuario) or empty($senha)){
     if (!is_dir($uploaddir)) {
         mkdir($uploaddir);
     }
-    // GUARDANDO A IMG NA PASTA
+    // GUARDANDO A FOTO NA PASTA
     move_uploaded_file($foto['tmp_name'], $uploaddir .DIRECTORY_SEPARATOR. $foto['name']);
 
     $_SESSION["campos"] = "DADOS SALVOS COM SUCESSO";// SESSION , DE REALIZADO COM SUCESSO
