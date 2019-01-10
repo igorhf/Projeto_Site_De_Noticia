@@ -17,15 +17,16 @@ if(empty($usuario) or empty($senha)){
     $select->bindParam(':senha',$senha);
     $select->execute();
     $result = $select->fetch(PDO::FETCH_ASSOC);
+    print_r($result);
     //PEGANDO OS DADOS DO BANCO E ARMAZENANDO NA SESSION
-    if($result != null){
-        foreach($select as $row){
-          $_SESSION["usuario"] = $row["usuario"];
-          $_SESSION["foto"] = $row["foto"];
-          $_SESSION["id"] = $row["id"];
-          $_SESSION["data"] = $row["data"];
-          $_SESSION["nome"] = $row["nome"];
-        }
+    if($result != 0){
+        // PASSANDO OS ARRAY PARA A SEEEION
+        $_SESSION["usuario"] = $result["usuario"];
+        $_SESSION["foto"] = $result["foto"];
+        $_SESSION["id"] = $result['id'];
+        $_SESSION["data"] = $result["data"];
+        $_SESSION["nome"] = $result["nome"];
+       
         set_include_path(header('Location:../principal_adm.php'));//direciona para a pagina seguinte
     }else{
         $_SESSION["erro"] = "LOGIN INVALIDOR";
