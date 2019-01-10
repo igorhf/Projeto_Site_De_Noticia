@@ -1,0 +1,20 @@
+nav{
+    background: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px groove; 
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+}
+a{
+    padding: 15px 12px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+a:hover{
+    color: green;
+    background: rgb(31, 95, 214)
+}
