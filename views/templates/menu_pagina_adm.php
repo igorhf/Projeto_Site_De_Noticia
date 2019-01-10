@@ -10,19 +10,27 @@
 </head>
 <body>
     <?php
-    session_start();
-    
-    if(!isset($_SESSION["login"])){
+    // INICIA A SESSION
+    session_start();   
+    // SE NÃO ESTIVER LOGADO ESSE MENU SERA MOSTRADO 
+    if(!isset($_SESSION["id"])){
     ?>    
     <nav>
         <ul>
             <li><a href="#">INICIO</a></li>
             <li><a href="views/pagina_cadastro_adm.php">CADASTRO ADM</a></li>
-            <li><a href="#">LOGIN</a></li>
+            <li><a href="views/pagina_login.html">LOGIN</a></li>
         </ul>
-    </nav>
+    </nav>    
     <?php
+    // ESTRUTURA DE ERRO
+    if(!isset($_SESSION["erro"])){
+    echo("SEJA BEM VINDO");
     }else{
+    print_r($_SESSION["erro"]);
+    }
+    }else{
+    // MENU MOSTRADO QUANDO ESTIVER LOGADO
     ?>
     <nav>
         <ul>
