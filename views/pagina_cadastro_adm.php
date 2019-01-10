@@ -16,7 +16,7 @@
     <?php
 
     session_start();
-    if($_SESSION["campos"] == ""){
+    if(!isset($_SESSION["campos"])){
         echo("REALIZE SEU CADASTRO");
     }else{
     print_r($_SESSION["campos"]);
