@@ -36,7 +36,7 @@
         <ul>
             <li><a href="#">INICIO</a></li>
             <li><a href="views/pagina_cadastro_adm.php" target="_blank">CADASTRO ADM</a></li>
-            <li><a href="#">CADASTRO NOTICIA</a></li>
+            <li><a href="views/pagina_cadastro_noticia.html" target="_blank">CADASTRO NOTICIA</a></li>
             <li><a href="models/deslogin.php">DESLOGIN</a></li>
         </ul>
     </nav>
