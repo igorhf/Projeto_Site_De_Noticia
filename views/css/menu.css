@@ -2,6 +2,7 @@ nav{
     background: rgb(59, 58, 58);
     border: 1px groove;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 ul{
     list-style-type: none;

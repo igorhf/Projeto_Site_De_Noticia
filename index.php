@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="views/css/logo.css">
     <link rel="stylesheet" type="text/css" href="views/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="views/css/descricao.css">
     <title>Pagina Principal</title>
 </head>
 <body>
@@ -13,6 +14,7 @@
     require_once("controllers/controle_index.php");
     logo();
     menu();
+    descricao();
     ?>   
 </body>
 </html>

@@ -1,0 +1,16 @@
+.desc_master{
+	background: #107c10ff;
+	width: 100%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.desc_master div{
+	display: inline-block;
+	margin: 10px 10px;
+}
+.desc_master div a{
+	text-decoration: none;
+	color: #fff;
+}
+.desc_master p {
+	color: #fff;
+}

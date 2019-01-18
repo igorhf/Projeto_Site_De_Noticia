@@ -6,4 +6,7 @@ function logo(){
 function menu(){
     set_include_path(require("views/templates/menu.php"));
 }
+function descricao(){
+    set_include_path(require("views/templates/descricao.php"));
+}
 ?>
