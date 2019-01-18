@@ -1,0 +1,20 @@
+nav{
+    background: rgb(59, 58, 58);
+    border: 1px groove;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+li{    
+    display: inline-block
+}
+li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 15px 12px;
+}
+li a:hover{
+    transition: 1.5s;
+    background: #107c10ff;
+}

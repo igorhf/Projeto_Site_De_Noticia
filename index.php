@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pagina Inicial</title>
+    <link rel="stylesheet" type="text/css" href="views/css/logo.css">
+    <link rel="stylesheet" type="text/css" href="views/css/menu.css">
+    <title>Pagina Principal</title>
 </head>
 <body>
     <?php
-    $data = date('Y-m-d H:i:s');
-
-    
-    echo("<h1>".$data."</h1>");
-    ?>    
-    
-
+    require_once("controllers/controle_index.php");
+    logo();
+    menu();
+    ?>   
 </body>
 </html>
