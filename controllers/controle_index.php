@@ -9,4 +9,7 @@ function menu(){
 function descricao(){
     set_include_path(require("views/templates/descricao.php"));
 }
+function destaque(){
+    set_include_path(require("views/templates/destaque_noticia.php"));
+}
 ?>

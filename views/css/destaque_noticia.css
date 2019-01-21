@@ -1,0 +1,35 @@
+.destaque_not{
+	margin: auto;
+	background: rgb(59, 58, 58);
+	width: 800px;
+	height: auto;
+	border: 1px solid;
+}
+.destaque_not .div_noticia{
+	display: table-cell;
+	background: #107c10ff;	
+	border:3px solid rgb(59, 58, 58);
+	width: 250px;
+	height: 400px;		
+	}
+.destaque_not .div_noticia:hover{				
+	border:4px solid #107c10ff;
+	background: #04B404;					
+}
+.destaque_not div img{
+	width:100%;
+	height:250px;	
+}
+.texto{
+
+}
+.texto h3{
+	color: #fff;
+	margin: 0px 0px 5px 0px;
+}
+span{
+	font-size: 13px;
+	color: #fff;
+	left: 0px;
+	bottom: 0px;
+}

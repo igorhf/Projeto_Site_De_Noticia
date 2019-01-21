@@ -31,7 +31,7 @@
             $result=$select->fetchAll(PDO::FETCH_ASSOC);
 
             foreach($result as $row)
-                echo("<option value=".$row['id'].">".$row['nome']."</option>")
+                echo("<option value=".$row['id'].">".$row['tipo_categoria']."</option>")
             ?>
         </select><br>
         <label>CAIXA DE TEXTO: </label><br><textarea name="texto" cols="90" rows="25"></textarea><br><br>

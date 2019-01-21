@@ -11,7 +11,7 @@
     $video = isset($_FILES["video"])?$_FILES["video"]:"";
     $texto = isset($_POST["texto"])?$_POST["texto"]:"";
     $categoria = isset($_POST["categoria"])?$_POST["categoria"]:"";
-    $autorid = print_r($_SESSION["id"]); 
+    $autorid = $_SESSION["id"]; 
     $data = date('Y-m-d H:i:s');
 
         
@@ -20,11 +20,11 @@ if(empty($titulo) or empty($banner) or empty($texto) or empty($categoria)){
     set_include_path(header('Location:../views/pagina_cadastro_noticia.php'));//direciona para a pagina seguinte
 }else{
     // PDO MYSQL
-    $sql = "INSERT INTO noticia(autor_id,titulo,post,categoria,texto1,img,video,data)VALUES(:autorid,:titulo,:post,:categoria,:texto1,:img,:video,:data)";
+    $sql = "INSERT INTO noticia(autor_id,titulo,post,categoria,texto1,img,video,data)VALUES(:autor_id,:titulo,:post,:categoria,:texto1,:img,:video,:data)";
     $insert = $conn->prepare($sql);
         
     // PASSANDO OS VALORES DA VARIAVEIS PARA OS CAMPOS DO PDO
-    $insert->bindParam(':autorid',$autorid);
+    $insert->bindParam(':autor_id',$autorid);
     $insert->bindParam(':titulo',$titulo);
     $insert->bindParam(':post',$banner['name']);
     $insert->bindParam(':categoria',$categoria);

@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="views/css/logo.css">
     <link rel="stylesheet" type="text/css" href="views/css/menu.css">
     <link rel="stylesheet" type="text/css" href="views/css/descricao.css">
+    <link rel="stylesheet" type="text/css" href="views/css/destaque_noticia.css">
     <title>Pagina Principal</title>
 </head>
 <body>
@@ -14,7 +15,9 @@
     require_once("controllers/controle_index.php");
     logo();
     menu();
+    destaque();
     descricao();
+
     ?>   
 </body>
 </html>
