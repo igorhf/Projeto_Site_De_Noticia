@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="views/css/menu.css">
     <link rel="stylesheet" type="text/css" href="views/css/descricao.css">
     <link rel="stylesheet" type="text/css" href="views/css/destaque_noticia.css">
+    <link rel="stylesheet" type="text/css" href="views/css/noticia.css">
     <title>Pagina Principal</title>
 </head>
 <body>
@@ -16,7 +17,10 @@
     logo();
     menu();
     destaque();
+    //noticia();
+    
     descricao();
+
 
     ?>   
 </body>

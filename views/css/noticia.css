@@ -1,0 +1,36 @@
+.div{
+	width: 500px;
+	height: 147px;
+	border: 1px solid;
+	position: relative;
+	background: #247D20;	
+	margin-bottom: 10px;
+}
+.div:hover{
+	box-shadow: 3px 3px #20B2AA;
+	background: #04B404;
+}
+.div div{			
+	float: left;
+	display: table-cell;
+}
+.div div .img{
+	height: 145px;
+	width: 145px;
+	border: 1px solid black;
+}
+.texto_1 a{
+	text-decoration: none;
+	color: black;
+}
+.texto_1 h1{
+	font-size: 21px;
+	margin: 0px 0px 0px 0px;
+}
+.catalogo{
+	margin-bottom: 40px;
+	margin-top: 40px;
+	width: 100%;
+	background: #ccc;
+}
+		
