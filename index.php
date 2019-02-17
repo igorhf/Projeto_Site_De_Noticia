@@ -16,12 +16,16 @@
     require_once("controllers/controle_index.php");
     logo();
     menu();
+    if (isset($_GET['categoria'])) {      
+        categoria();  
+    }
+    elseif (isset($_GET['noticia'])) {
+        //noticia();
+    }
+    else{
     destaque();
-    //noticia();
-    
+    }    
     descricao();
-
-
     ?>   
 </body>
 </html>
