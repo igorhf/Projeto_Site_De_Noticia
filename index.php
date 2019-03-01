@@ -20,7 +20,7 @@
         categoria();  
     }
     elseif (isset($_GET['noticia'])) {
-        //noticia();
+        noticia();
     }
     else{
     destaque();
