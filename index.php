@@ -13,19 +13,19 @@
 </head>
 <body>
     <?php
-    require_once("controllers/controle_index.php");
-    logo();
-    menu();
-    if (isset($_GET['categoria'])) {      
+    require_once("controllers/controle_index.php"); // traz as funções para modela o site
+    logo(); // logo
+    menu(); // menu
+    if (isset($_GET['categoria'])) { // tipo de categoria selecionado  no menu      
         categoria();  
     }
-    elseif (isset($_GET['noticia'])) {
+    elseif (isset($_GET['noticia'])) { // ao clicar na noticia mostrara a noticia detalhada
         noticia();
     }
     else{
-    destaque();
+    destaque(); // mostra a noticia em destaque e o historico de noticia
     }    
-    descricao();
+    descricao(); // mostra a descrição do site e rede social
     ?>   
 </body>
 </html>
