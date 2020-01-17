@@ -37,11 +37,7 @@ CREATE TABLE `adm` (
 -- Dumping data for table `adm`
 --
 
-LOCK TABLES `adm` WRITE;
-/*!40000 ALTER TABLE `adm` DISABLE KEYS */;
-INSERT INTO `adm` VALUES (1,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','igor','123',NULL),(2,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','igor','123',NULL),(3,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','igor','123','2019-01-08 00:45:40'),(4,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','igor','123','2019-01-08 23:21:10'),(5,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','igor','12345','2019-01-08 23:22:28'),(6,'veronica henrique ferreira','47442499_594616297638526_6155465077571977216_n.jpg','igor','55','2019-01-08 23:24:37'),(7,'veronica henrique ferreira','48359082_1133305376833401_8094171095457857536_n.png','igor','111','2019-01-08 23:25:20'),(8,'veronica henrique ferreira','48359082_1133305376833401_8094171095457857536_n.png','igor','111','2019-01-08 23:27:46'),(9,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','igor','123','2019-01-08 23:27:58'),(10,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','igor','123','2019-01-09 00:31:55'),(11,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','igor','123','2019-01-09 00:33:24'),(12,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','IVO','123','2019-01-09 00:51:04'),(13,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','IVO','123','2019-01-09 00:51:05'),(14,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','igor','123','2019-01-09 01:01:31'),(15,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','igor','Z','2019-01-09 01:04:26'),(16,'veronica henrique ferreira','45159263_2179090552308951_5210048853377548288_n.jpg','IVO','333','2019-01-09 01:05:24'),(17,'veronica henrique ferreira','download.png','igor','123','2019-01-09 01:18:53'),(18,'veronica henrique ferreira','captura de tela.png','igor','1','2019-01-09 01:23:16');
-/*!40000 ALTER TABLE `adm` ENABLE KEYS */;
-UNLOCK TABLES;
+
 
 --
 -- Table structure for table `categorias`
@@ -63,7 +59,7 @@ CREATE TABLE `categorias` (
 
 LOCK TABLES `categorias` WRITE;
 /*!40000 ALTER TABLE `categorias` DISABLE KEYS */;
-INSERT INTO `categorias` VALUES (1,'geral'),(2,'xbox gold'),(3,'lancamento'),(4,'reviews'),(5,'previas'),(6,'promocao');
+INSERT INTO `categorias` VALUES (1,'geral'),(2,'xbox gold'),(3,'lancamentos'),(4,'reviews'),(5,'previas'),(6,'promocao');
 /*!40000 ALTER TABLE `categorias` ENABLE KEYS */;
 UNLOCK TABLES;
 
